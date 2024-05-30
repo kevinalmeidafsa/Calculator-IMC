@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculador IMC</title>
+
+    <!-- styles -->
+    <link rel="stylesheet" href="./styles/main.css" />
+    <link
+    href="https://api.fontshare.com/v2/css?f[]=archivo@400,500,600&f[]=clash-display@400,500,600&display=swap""
+    rel="stylesheet" />
+
+    <!-- scripts -->
+    <script src="./scripts/main.js" defer type="module"></script>
+  </head>
+  <body>
+    <div class="alert-error">Digite somente números</div>
+    <div class="container">
+      <main class="card">
+        <form id="form">
+          <h1 class="title">Cálculo de IMC</h1>
+          <div class="input-wrapper">
+            <label for="weight">Peso (kg)</label>
+            <input type="text" id="weight" placeholder="Ex. 78" />
+          </div>
+          <div class="input-wrapper">
+            <label for="height">Altura (m)</label>
+            <input
+              type="text"
+              id="height"
+              name="altura"
+              placeholder="Ex. 170"
+            />
+          </div>
+          <button type="submit">
+            <img src="./assets/calculator.svg" alt="Calculadora" />Calcular IMC
+          </button>
+        </form>
+      </main>
+    </div>
+    <div class="modal-wrapper">
+      <div class="modal card">
+        <h2 class="title"></h2>
+        <button class="close">
+          <img src="./assets/close.svg" alt="Icone para fechar" />
+        </button>
+      </div>
+    </div>
+  </body>
+</html>
